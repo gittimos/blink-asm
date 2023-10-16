@@ -8,7 +8,7 @@
 		.endm
 
 		.text
-
+		
 blink:	
 
 		# Enable GPIO3 output
@@ -22,7 +22,7 @@ blink:
 		# Set GPIO matrix GPIO_FUNC_OUT_SEL with a special peripheral index 128 (0×80)
         lw t0,gpiobase		# load base address for GPIO registers into t0
 		lh t1,funcsel		# load offset for GPIO_FUNC3_OUT_SEL
-		or t2,t0,t1			# add offset for GPIO_FUNC5_OUT_SEL and store address in t2
+		or t2,t0,t1			# add offset for GPIO_FUNC3_OUT_SEL and store address in t2
 		lbu t0,index		# load index (0x80) into t0
         sw t0,0(t2) 		# store index to GPIO_FUNC3_OUT_SEL
 
