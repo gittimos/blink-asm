@@ -9,7 +9,7 @@ RISC-V is an open standard instruction set architecture based on established red
 - [RISC-V Assembler Reference](https://michaeljclark.github.io/asm.html)
 
 ## The RISC-V based ESP32 C3 DevKit-M1
-[ESP32-C3-DevKitM-1](esp32.png)
+![ESP32-C3-DevKitM-1](esp32.png)
 - [User Guide](https://docs.espressif.com/projects/esp-idf/en/latest/esp32c3/hw-reference/esp32c3/user-guide-devkitm-1.html)
 - [ESP32­C3 Technical Reference Manual](https://www.espressif.com/sites/default/files/documentation/esp32-c3_technical_reference_manual_en.pdf)
 - Fritzing
