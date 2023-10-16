@@ -1,7 +1,21 @@
 # Blink an LED 
-
 This example shows how to toggle a GPIO pin with RISC-V assembly only using registers as described in the [ESP32­C3
 Technical Reference Manual](https://www.espressif.com/sites/default/files/documentation/esp32-c3_technical_reference_manual_en.pdf).
+
+# Hardware setup
+## The RISC-V
+RISC-V is an open standard instruction set architecture based on established reduced instruction set computer principles. Unlike most other ISA designs, RISC-V is provided under royalty-free open-source licenses.
+- [RISC-V Specifications](https://riscv.org/technical/specifications/) with ISA Specifications
+- [RISC-V Assembler Reference](https://michaeljclark.github.io/asm.html)
+
+## The RISC-V based ESP32 C3 DevKit-M1
+[ESP32-C3-DevKitM-1](esp32.png)
+- [User Guide](https://docs.espressif.com/projects/esp-idf/en/latest/esp32c3/hw-reference/esp32c3/user-guide-devkitm-1.html)
+- [ESP32­C3 Technical Reference Manual](https://www.espressif.com/sites/default/files/documentation/esp32-c3_technical_reference_manual_en.pdf)
+- Fritzing
+
+## The ESP-IDF
+- [ESP-IDF Programming Guide](https://docs.espressif.com/projects/esp-idf/en/v5.0/esp32c3/index.html)
 
 # GPIO matrix and IO MUX
 The following diagram from the 
