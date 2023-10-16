@@ -14,12 +14,23 @@ GPIO output has to be enabled by setting the respective bit in register `GPIO_EN
 [ESP32­C3 Technical Reference Manual](https://www.espressif.com/sites/default/files/documentation/esp32-c3_technical_reference_manual_en.pdf)
 for details.
 
+The following code snippet shows how the GPIO3 output is enabled:
+```
+lw t0,gpiobase   # load base address for GPIO registers into t0
+lb t1,enable     # load offset for GPIO_ENABLE_REG into t1
+or t2,t0,t1      # add offset to address and store address in t2
+li t0,1          # load 1 in register t0
+slli t0,t0,3     # shift 1 left by 3 positions
+sw t0,0(t2)      # store value to GPIO_ENABLE_REG
+```
+
 ## Set GPIO matrix GPIO_FUNC_OUT_SEL with a special peripheral index 128 (0×80)
 Simple GPIO output (see section 5.5.3, p 158 in 
 [ESP32­C3 Technical Reference Manual](https://www.espressif.com/sites/default/files/documentation/esp32-c3_technical_reference_manual_en.pdf))
 the special value `0x80` has to be loaded in the register `GPIO_FUNCn_OUT_SEL_CFG_REG`. 
 The address is `0x0554+4*n` and therefore `0x0560` for `GPIO3` (see p 170, 178) for details. 
 
+The following code snippet shows how to load the special index into the GPIO_FUNC_OUT_SEL register:
 ```
 lw t0,gpiobase  # load base address for GPIO registers into t0
 lh t1,funcsel   # load offset for GPIO_FUNC3_OUT_SEL
@@ -34,9 +45,28 @@ Recommended operation is to use `GPIO_OUT_W1TS_REG (0x0008)` to set the bit in `
 [ESP32­C3 Technical Reference Manual](https://www.espressif.com/sites/default/files/documentation/esp32-c3_technical_reference_manual_en.pdf)
 for details.
 
+The following code snippet shows how to set the corresponding bit in GPIO_OUT_REG register:
+```
+lw t0,gpiobase  # load base address for GPIO registers into t0
+lb t1,set       # load offset for GPIO_OUT_W1TS_REG
+or t2,t0,t1     # add offset for GPIO_OUT_W1TS_REG
+li t0,1         # load 1 in register t0
+slli t0,t0,3    # shift 1 left by 3 positions
+sw t0,0(t2)     # store value to GPIO_OUT_W1TS_REG
+```
 
 ## Clear the corresponding bit in GPIO_OUT_REG register
 To clear the appropriate bit for the output for `GPIO3` is has to be cleared in `GPIO_OUT_REG (0x0004)`.
 Recommended operation is to use `GPIO_OUT_W1TC_REG (0x000C)` to clear the bit in `GPIO_OUT_REG`. See p 173 in 
 [ESP32­C3 Technical Reference Manual](https://www.espressif.com/sites/default/files/documentation/esp32-c3_technical_reference_manual_en.pdf)
 for details.
+
+The following code snippet shows how to clear the corresponding bit in GPIO_OUT_REG register:
+```
+lw t0,gpiobase  # load base address for GPIO registers into t0
+lb t1,clear     # load offset for GGPIO_OUT_W1TC_REG
+or t2,t0,t1     # add offset for GPIO_OUT_W1TC_REG 
+li t0,1         # load 1 in register t0
+slli t0,t0,3    # shift 1 left by 3 positions
+sw t0,0(t2)     # store value to GPIO_OUT_W1TC_REG
+```
