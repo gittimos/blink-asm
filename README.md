@@ -2,23 +2,25 @@
 This example shows how to toggle a GPIO pin with RISC-V assembly only using registers as described in the [ESP32­C3
 Technical Reference Manual](https://www.espressif.com/sites/default/files/documentation/esp32-c3_technical_reference_manual_en.pdf).
 
-# Hardware setup
-## The RISC-V
-RISC-V is an open standard instruction set architecture based on established reduced instruction set computer principles. Unlike most other ISA designs, RISC-V is provided under royalty-free open-source licenses.
+# Setup the ESP32-C3-DevKitM-1
+## The RISC-V Instruction Set Architecture
+RISC-V is an open standard instruction set architecture (ISA) based on established reduced instruction set computer principles. Unlike most other ISA designs, RISC-V is provided under royalty-free open-source licenses.
 - [RISC-V Specifications](https://riscv.org/technical/specifications/) with ISA Specifications
 - [RISC-V Assembler Reference](https://michaeljclark.github.io/asm.html)
 
 ## The RISC-V based ESP32 C3 DevKit-M1
 ![ESP32-C3-DevKitM-1](esp32.png)
+The RISC-V based ESP32 C3 DevKit-M1 is a cost-effective and well documented device with a RISC-V MCU. See here for details:
+- [Espressif ESP32-C3](https://www.espressif.com/en/products/socs/esp32-c3)
 - [User Guide](https://docs.espressif.com/projects/esp-idf/en/latest/esp32c3/hw-reference/esp32c3/user-guide-devkitm-1.html)
 - [ESP32­C3 Technical Reference Manual](https://www.espressif.com/sites/default/files/documentation/esp32-c3_technical_reference_manual_en.pdf)
-- Fritzing
 
+## Hardware setup
 The following Fritzung diagram shows the wiring. Please note that I used a LED with in-build resistor. You have to use a resistor for a common LED.
 ![Fritzung diagram](breadboard.png)
 
 ## The ESP-IDF
-- [ESP-IDF Programming Guide](https://docs.espressif.com/projects/esp-idf/en/v5.0/esp32c3/index.html)
+ESP-IDF is Espressif's official IoT Development Framework for the ESP32, ESP32-S, ESP32-C and ESP32-H series of SoCs. See [here](https://www.espressif.com/en/products/sdks/esp-idf#:~:text=ESP%2DIDF%20is%20Espressif's%20official,ESP32%2DH%20series%20of%20SoCs.) for details.
 
 # GPIO matrix and IO MUX
 The following diagram from the 
