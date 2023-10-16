@@ -21,7 +21,7 @@ the special value `0x80` has to be loaded in the register `GPIO_FUNCn_OUT_SEL_CF
 The address is `0x0554+4*n` and therefore `0x0560` for `GPIO3` (see p 170, 178) for details. 
 
 ```
-lw t0,gpiobase		# load base address for GPIO registers into t0
+lw t0,gpiobase	# load base address for GPIO registers into t0
 lh t1,funcsel		# load offset for GPIO_FUNC3_OUT_SEL
 or t2,t0,t1			# add offset for GPIO_FUNC3_OUT_SEL and store address in t2
 lbu t0,index		# load index (0x80) into t0
