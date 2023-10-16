@@ -4,6 +4,9 @@ This example shows how to toggle a GPIO pin with RISC-V assembly only using regi
 Technical Reference Manual](https://www.espressif.com/sites/default/files/documentation/esp32-c3_technical_reference_manual_en.pdf).
 
 # GPIO matrix and IO MUX
+The following diagram from the 
+[ESP32­C3 Technical Reference Manual](https://www.espressif.com/sites/default/files/documentation/esp32-c3_technical_reference_manual_en.pdf)
+(p 153) shows the datapath and the registers involved in GPIO output with added page references.
 ![Diagram](GPIO_diagram.png)
 
 ## Enable GPIO3 output
