@@ -20,6 +20,7 @@ The RISC-V based ESP32 C3 DevKit-M1 is a cost-effective and well documented devi
 
 ## Hardware setup
 The following Fritzung diagram shows the wiring. Please note that I used a LED with in-build resistor. You have to use a resistor for a common LED.
+
 ![Fritzung diagram](breadboard.png)
 
 ## The ESP-IDF
