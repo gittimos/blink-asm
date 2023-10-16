@@ -14,6 +14,9 @@ RISC-V is an open standard instruction set architecture based on established red
 - [ESP32­C3 Technical Reference Manual](https://www.espressif.com/sites/default/files/documentation/esp32-c3_technical_reference_manual_en.pdf)
 - Fritzing
 
+The following Fritzung diagram shows the wiring. Please note that I used a LED with in-build resistor. You have to use a resistor for a common LED.
+![Fritzung diagram](breadboard.png)
+
 ## The ESP-IDF
 - [ESP-IDF Programming Guide](https://docs.espressif.com/projects/esp-idf/en/v5.0/esp32c3/index.html)
 
