@@ -10,9 +10,10 @@ RISC-V is an open standard instruction set architecture (ISA) based on establish
 
 ## The RISC-V based ESP32 C3 DevKit-M1
 ![ESP32-C3-DevKitM-1](esp32.png)
+(Source: espressif.com)[https://docs.espressif.com/projects/esp-idf/en/latest/esp32c3/hw-reference/esp32c3/user-guide-devkitm-1.html]
 The RISC-V based ESP32 C3 DevKit-M1 is a cost-effective and well documented device with a RISC-V MCU. See here for details:
 - [Espressif ESP32-C3](https://www.espressif.com/en/products/socs/esp32-c3)
-- [User Guide](https://docs.espressif.com/projects/esp-idf/en/latest/esp32c3/hw-reference/esp32c3/user-guide-devkitm-1.html)
+- [ESP32-C3-DevKitM-1 User Guide](https://docs.espressif.com/projects/esp-idf/en/latest/esp32c3/hw-reference/esp32c3/user-guide-devkitm-1.html)
 - [ESP32­C3 Technical Reference Manual](https://www.espressif.com/sites/default/files/documentation/esp32-c3_technical_reference_manual_en.pdf)
 
 ## Hardware setup
