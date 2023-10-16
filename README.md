@@ -20,7 +20,8 @@ The following Fritzung diagram shows the wiring. Please note that I used a LED w
 ![Fritzung diagram](breadboard.png)
 
 ## The ESP-IDF
-ESP-IDF is Espressif's official IoT Development Framework for the ESP32, ESP32-S, ESP32-C and ESP32-H series of SoCs. See [here](https://www.espressif.com/en/products/sdks/esp-idf#:~:text=ESP%2DIDF%20is%20Espressif's%20official,ESP32%2DH%20series%20of%20SoCs.) for details.
+ESP-IDF is Espressif's official IoT Development Framework for the ESP32, ESP32-S, ESP32-C and ESP32-H series of SoCs. See [here](https://www.espressif.com/en/products/sdks/esp-idf#:~:text=ESP%2DIDF%20is%20Espressif's%20official,ESP32%2DH%20series%20of%20SoCs.) for details. I use the [VS Code extension](https://github.com/espressif/vscode-esp-idf-extension) 
+for creating, building and flashing projects.
 
 # GPIO matrix and IO MUX
 The following diagram from the 
