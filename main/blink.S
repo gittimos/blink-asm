@@ -1,7 +1,7 @@
 		.global	blink
 
 		.macro 	delay_loop count n
-				li   t0, \count	   # Load immediate value into t0 for delay count
+				li   t0, \count	   
 				loop_\n:
 				addi t0, t0, -1
 				bnez t0, loop_\n
